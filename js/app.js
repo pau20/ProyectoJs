@@ -164,8 +164,20 @@ btnEnd.addEventListener(`click`, finCompra)
 
 
 function finCompra(){
-    contenedorCarrito.innerHTML = ``
+    if(carrito.length == 0){
+    Toastify({
+        text: "El carrito esta vacio...",
+        className: "info",
+        style: {
+          background: "#FF0000",
+        }
+      }).showToast();
+
+    }else{
+        contenedorCarrito.innerHTML = ``
+    carrito = []
     actualizarCarrito()
+    localStorage.clear()
     Toastify({
         text: "Compra finalizada correctamente",
         className: "info",
@@ -173,5 +185,6 @@ function finCompra(){
           background: "#34a0a4",
         }
       }).showToast();
-      localStorage.clear()
+    }
+    
 }
