@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <!-- link google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&display=swap" rel="stylesheet">
+     <!-- link bootstrap css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- link mi css -->
+    <link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body>
+<!-- nav de bs -->
+<div class="container-fluid">
+  <div class="row d-flex justify-content-between">
+      <div>
+          <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: black;"> 
+              <!-- colores que puedo llegar a usar #772c8c  #9238a7  #5a3b62  #381546 #dad1d7 -->
+              <a class="navbar-brand" href="/index.html"><img src="../img/logo.jpeg" alt="logo"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Inicio <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="productos.html" >
+                        Productos
+                      </a>
+                    </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">NOSOTROS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li> 
+                </ul>
+              </div>
+          </nav>
+      </div>
+  </div>
+</div>
+<!-- cierre navbar -->
+<!-- inicio contenido -->
+<div class="row api starWarsBg">
+  <div class="col-lg-12 d-flex flex-column align-items-center">
+    <h1 class="fontWhite">Buscador de Personajes de Star Wars</h1>
+      <div class="infoContainer">
+          <h1 id="nombre" class="fontPurple"></h1>
+          <p id="genero" class="fontWhite"></p>
+          <p id="altura" class="fontWhite"></p>
+          <p id="masa" class="fontWhite"></p>
+          <p id="colorPelo" class="fontWhite"></p>
+          <p id="colorPiel" class="fontWhite"></p>
+          <p id="colorOjos" class="fontWhite"></p>
+          <p id="bday" class="fontWhite"></p>
+      </div>
+      <button type="button" id="button" name="button">Comienza tu búsqueda</button>
+  </div>
+</div>
+
+
+<!-- inicio footer -->
+<footer>
+  <div class="container-fluid">
+    <div class="row m-4">
+      <!-- logo anakin -->
+      <div class="col-lg-4 col-4">
+        <a href="#">
+          <img class="footerImg" src="/img/logo.jpeg" alt="logo">
+        </a> 
+      </div>
+      <!-- logo wpp -->
+      <div class="col-lg-1 col-1">
+        <a href="">
+          <img class="footerImg1" src="/img/rss/whatsapp.png" alt="wpp">
+        </a>
+      </div>
+      <!-- logo ig -->
+      <div class="col-lg-1 col-1">
+        <a href="https://www.instagram.com/anakin.medias/">
+          <img class="footerImg1" src="/img/rss/instagram.png" alt="ig">
+        </a>
+      </div>
+      <!-- logo twitter -->
+      <div class="col-lg-1 col-1">
+        <a href="">
+          <img class="footerImg1" src="/img/rss/gorjeo.png" alt="twitter">
+        </a>
+      </div>
+      <!-- logo facebook -->
+      <div class="col-lg-1 col-1">
+        <a href="">
+          <img class="footerImg1" src="/img/rss/facebook.png" alt="fb">
+        </a>
+      </div>
+      <!-- logo mail -->
+      <div class="col-lg-1 col-1">
+        <a href="">
+          <img class="footerImg1" src="/img/rss/email.png" alt="e-mail">
+        </a>
+      </div>
+      <!-- copyright derechos -->
+      <div class="col-lg-3 col-3">
+        <p>© 2022 Copyright: Desarrollo de Web por Paula Di Cesare.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- cierre footer -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.3/axios.min.js" integrity="sha512-V6IDfQu/TH8jr2FUTNMaR8ck+NTj4lFftam3O4vumLTKlNO53KCUkhb26zJ2KmBpCno8C5K9C2eSK5a5H3FtZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/api.js"></script>
+    </body>
+</html>
